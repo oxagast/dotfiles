@@ -1,0 +1,26 @@
+[begin] (fluxbox)
+[exec] (Terminal) {urxvt -depth 32 -bg rgba:0000/0000/0000/CCCC -fg white +sb}
+[exec] (Firefox) {firefox}
+[exec] (VirtualBox) {VirtualBox}
+[exec] (Gimp) {gimp}
+[exec] (Lock Screen) {xscreensaver-command -lock}
+[submenu] (Backgrounds)
+[wallpapers] (~/Pictures/Wallpaper) {feh --bg-scale}
+[end]
+   [submenu] (Window Managers) {}
+      [restart] (FluxBox)  {/usr/bin/startfluxbox}
+   [end]
+
+   [config] (Configuration)
+   [submenu] (Styles) {}
+      [stylesdir] (/usr/share/fluxbox/styles)
+      [stylesdir] (~/.fluxbox/styles)
+   [end]
+   [workspaces] (Workspaces)
+   [reconfig] (Reconfigure)
+   [restart] (Restart)
+   [exit] (Exit)
+
+
+#[include] (/etc/X11/fluxbox/fluxbox-menu)
+[end]

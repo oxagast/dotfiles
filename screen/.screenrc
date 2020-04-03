@@ -1,0 +1,27 @@
+startup_message off
+#hardstatus alwayslastline "%{bw}%1`%= "#idle 1800 lockscreen
+vbell off
+msgwait 2
+defscrollback 15000
+defutf8 on
+shell bash
+shelltitle "$ |bash"
+bind '/' eval "clear" "scrollback 0" "scrollback 15000"
+bind = resize =
+bind + resize +1
+bind - resize -1
+bind _ resize max
+
+bindkey ^[^[[b focus down
+bindkey ^[^[[a focus up
+bindkey ^[^[[d focus left
+bindkey ^[^[[c focus right
+
+backtick 1 10 10 $HOME/.screenrc_cpuinfo.pl
+#backtick 2 0 0 $HOME/code/wormulon/wormulon -i tun0
+backtick 3 0 0 hostname
+termcapinfo rxvt-unicode ti@:te@
+caption always "%{= Wk}%?%-Lw%?%{+b kw}%n*%t%f %?(%u)%?%{= wk}%?%+Lw%?"
+hardstatus lastline "%3` - %l - %1` %-= %= %D,%c:%s%a "
+screen -t "bash"	1 bash
+screen -t "bash"	2 bash

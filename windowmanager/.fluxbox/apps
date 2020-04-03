@@ -1,0 +1,6 @@
+[group]
+[app] (name=.*[uU][rR]xvt) {8}
+[end]
+[group]
+[app] (class=Firefox-esr) {30}
+[end]
