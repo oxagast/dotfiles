@@ -2,5 +2,5 @@
 [app] (name=.*[uU][rR]xvt) {8}
 [end]
 [group]
-[app] (class=Firefox-esr) {30}
+[app] (class=[Ff]irefox*) {30}
 [end]

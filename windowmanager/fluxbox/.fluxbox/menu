@@ -1,6 +1,7 @@
 [begin] (fluxbox)
-[exec] (Terminal) {urxvt -depth 32 -bg rgba:0000/0000/0000/CCCC -fg white +sb}
+[exec] (Terminal) {urxvt -depth 32 -bg rgba:0000/0000/0000/CCCC -fg white +sb -fn "xft:Luxi Mono:pixelsize=11,style=Regular"}
 [exec] (Firefox) {firefox}
+[exec] (Tor Browser) {/home/marshall/hack/tor-browser_en-US/Browser/start-tor-browser --detach}
 [exec] (VirtualBox) {VirtualBox}
 [exec] (Gimp) {gimp}
 [exec] (Deluge) {deluge-gtk}
@@ -8,7 +9,7 @@
 [exec] (Lock Screen) {xscreensaver-command -lock}
 [nop] (--------)
 [submenu] (Backgrounds)
-[wallpapers] (~/Pictures/Wallpaper) {feh --bg-scale}
+[wallpapers] (~/pictures/wallpaper) {feh --bg-scale}
 [end]
    [submenu] (Window Managers) {}
       [restart] (FluxBox)  {/usr/bin/startfluxbox}

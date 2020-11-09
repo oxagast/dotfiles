@@ -9,7 +9,7 @@ xmodmap "/home/marshall/.Xmodmap"
 # start composit manager for transparency
 compton &
 # change wallpaper
-feh --bg-scale Pictures/Wallpapers/greenspots.jpg &
+feh --bg-scale pictures/wallpaper/668ff999c76ae4a0501e1d4f31431fdae99b2763-blue.jpeg
 # start screensaver
 xscreensaver -no-splash &
 # Applications you want to run with fluxbox.
