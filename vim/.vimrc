@@ -3,7 +3,7 @@ filetype indent on
 set smartcase
 set incsearch
 set lazyredraw 
-colorscheme desert
+colorscheme preto
 syntax on
 set ai
 set si
