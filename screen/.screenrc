@@ -1,6 +1,6 @@
 startup_message off
 #hardstatus alwayslastline "%{bw}%1`%= "#idle 1800 lockscreen
-vbell off
+vbell on
 msgwait 2
 defscrollback 15000
 defutf8 on
@@ -19,9 +19,9 @@ bindkey ^[^[[c focus right
 
 backtick 1 10 10 $HOME/.screenrc_cpuinfo.pl
 #backtick 2 0 0 $HOME/code/wormulon/wormulon -i tun0
-backtick 3 0 0 hostname
+#backtick 3 0 0 hostname
 termcapinfo rxvt-unicode ti@:te@
-caption always "%{= Wk}%?%-Lw%?%{+b kw}%n*%t%f %?(%u)%?%{= wk}%?%+Lw%?"
-hardstatus lastline "%3` - %l - %1` %-= %= %D,%c:%s%a "
+caption always "%{= Wk}%?%-Lw%?%{+b kw}%n*%t%f %?(%u)%?%{= wk}%?%+Lw%? %=%1`"
+#hardstatus lastline "%3` - %l - %1` %-= %= %D,%c:%s%a "
 screen -t "bash"	1 bash
 screen -t "bash"	2 bash
